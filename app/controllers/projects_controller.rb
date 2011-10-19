@@ -1,5 +1,8 @@
 class ProjectsController < ApplicationController
+  # Filters
   before_filter :find_project, :only => [:show, :update, :edit, :destroy]
+  
+  # Actions
   def index
     @projects = Project.all
   end
