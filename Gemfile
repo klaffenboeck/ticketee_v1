@@ -19,6 +19,8 @@ end
 gem 'jquery-rails'
 gem 'dynamic_form'
 
+gem 'devise', '1.4.3'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
