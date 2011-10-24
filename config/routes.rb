@@ -1,10 +1,12 @@
 Ticketee::Application.routes.draw do
   devise_for :users
-
-  root :to => 'projects#index'
+  
+  default_url_options :host => "localhost:3000"
   
   resources :projects do
     resources :tickets
   end
+  
+  root :to => 'projects#index'
   
 end
